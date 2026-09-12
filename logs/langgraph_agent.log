@@ -1,0 +1,284 @@
+2026-09-12 16:11:13,196 | INFO | LangGraphAgent | Environment variables loaded successfully.
+2026-09-12 16:11:16,873 | INFO | LangGraphAgent | arxiv tool initialized successfully.
+2026-09-12 16:19:43,201 | INFO | LangGraphAgent | Wikipedia tool initialized successfully.
+2026-09-12 16:24:25,548 | INFO | LangGraphAgent | Tavily search tool initialized successfully.
+2026-09-12 16:27:09,467 | INFO | root | Tools registered: ['arxiv', 'wikipedia', 'tavily_search']
+2026-09-12 16:29:26,504 | INFO | LangGraphAgent | Groq LLM initialized successfully.
+2026-09-12 16:30:34,509 | INFO | LangGraphAgent | Groq LLM initialized successfully.
+2026-09-12 16:35:19,308 | INFO | LangGraphAgent | Tools successfully bound to LLM.
+2026-09-12 17:01:47,670 | ERROR | LangGraphAgent | Failed to create or compile LangGraph.
+Traceback (most recent call last):
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_12080\3838459040.py", line 28, in <module>
+    graph_builder.add_conditinal_edges(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'StateGraph' object has no attribute 'add_conditinal_edges'
+2026-09-12 17:02:34,700 | INFO | LangGraphAgent | LangGraph compiled successfully.
+2026-09-12 17:04:49,876 | WARNING | LangGraphAgent | ASCII graph visualization is not available.
+2026-09-12 17:07:09,150 | INFO | LangGraphAgent | User query received: hello
+2026-09-12 17:11:55,284 | INFO | LangGraphAgent | Starting LangGraph execution...
+2026-09-12 17:11:55,381 | INFO | LangGraphAgent | LLM node started.
+2026-09-12 17:11:55,383 | ERROR | LangGraphAgent | Error occurred while invoking LLM.
+Traceback (most recent call last):
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_12080\3998909435.py", line 6, in tool_calling_llm
+    messages = state["messages"]
+               ~~~~~^^^^^^^^^^^^
+KeyError: 'messages'
+2026-09-12 17:11:55,395 | ERROR | LangGraphAgent | LangGraph execution failed.
+Traceback (most recent call last):
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_12080\920701249.py", line 5, in <module>
+    response = graph.invoke(
+               ^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3913, in invoke
+    for chunk in self.stream(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2967, in stream
+    for _ in runner.tick(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 207, in tick
+    run_with_retry(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 617, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 707, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 447, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_12080\3998909435.py", line 6, in tool_calling_llm
+    messages = state["messages"]
+               ~~~~~^^^^^^^^^^^^
+KeyError: 'messages'
+During task with name 'tool_calling_llm' and id '75f9a2cb-d49d-f4e0-a0f7-8c98014f687f'
+2026-09-12 17:12:32,668 | INFO | LangGraphAgent | Starting LangGraph execution...
+2026-09-12 17:12:32,671 | INFO | LangGraphAgent | LLM node started.
+2026-09-12 17:12:32,672 | ERROR | LangGraphAgent | Error occurred while invoking LLM.
+Traceback (most recent call last):
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_12080\3998909435.py", line 6, in tool_calling_llm
+    messages = state["messages"]
+               ~~~~~^^^^^^^^^^^^
+KeyError: 'messages'
+2026-09-12 17:12:32,675 | ERROR | LangGraphAgent | LangGraph execution failed.
+Traceback (most recent call last):
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_12080\3638778944.py", line 5, in <module>
+    response = graph.invoke(
+               ^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3913, in invoke
+    for chunk in self.stream(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2967, in stream
+    for _ in runner.tick(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 207, in tick
+    run_with_retry(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 617, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 707, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 447, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_12080\3998909435.py", line 6, in tool_calling_llm
+    messages = state["messages"]
+               ~~~~~^^^^^^^^^^^^
+KeyError: 'messages'
+During task with name 'tool_calling_llm' and id '55f9c582-2386-0893-8308-55c3370ea2c2'
+2026-09-12 17:14:50,984 | INFO | LangGraphAgent | Environment variables loaded successfully.
+2026-09-12 17:14:51,490 | INFO | LangGraphAgent | arxiv tool initialized successfully.
+2026-09-12 17:14:51,715 | INFO | LangGraphAgent | Wikipedia tool initialized successfully.
+2026-09-12 17:14:52,075 | INFO | LangGraphAgent | Tavily search tool initialized successfully.
+2026-09-12 17:14:52,447 | INFO | root | Tools registered: ['arxiv', 'wikipedia', 'tavily_search']
+2026-09-12 17:14:54,803 | INFO | LangGraphAgent | Groq LLM initialized successfully.
+2026-09-12 17:14:54,912 | INFO | LangGraphAgent | Tools successfully bound to LLM.
+2026-09-12 17:14:57,652 | INFO | LangGraphAgent | LangGraph compiled successfully.
+2026-09-12 17:15:00,168 | WARNING | LangGraphAgent | ASCII graph visualization is not available.
+2026-09-12 17:15:23,096 | INFO | LangGraphAgent | User query received: hello can you tell me capital of India
+2026-09-12 17:17:49,023 | INFO | LangGraphAgent | Starting LangGraph execution...
+2026-09-12 17:17:49,088 | INFO | LangGraphAgent | LLM node started.
+2026-09-12 17:17:49,092 | ERROR | LangGraphAgent | Error occurred while invoking LLM.
+Traceback (most recent call last):
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_12080\3998909435.py", line 6, in tool_calling_llm
+    messages = state["messages"]
+               ~~~~~^^^^^^^^^^^^
+KeyError: 'messages'
+2026-09-12 17:17:49,102 | ERROR | LangGraphAgent | LangGraph execution failed.
+Traceback (most recent call last):
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_12080\3311378415.py", line 5, in <module>
+    response = graph.invoke(
+               ^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3913, in invoke
+    for chunk in self.stream(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2967, in stream
+    for _ in runner.tick(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 207, in tick
+    run_with_retry(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 617, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 707, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 447, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_12080\3998909435.py", line 6, in tool_calling_llm
+    messages = state["messages"]
+               ~~~~~^^^^^^^^^^^^
+KeyError: 'messages'
+During task with name 'tool_calling_llm' and id 'a0c92ff5-1fb6-c8f7-a682-52b79d78578a'
+2026-09-12 17:19:18,271 | INFO | LangGraphAgent | Environment variables loaded successfully.
+2026-09-12 17:19:18,370 | INFO | LangGraphAgent | arxiv tool initialized successfully.
+2026-09-12 17:19:18,505 | INFO | LangGraphAgent | Wikipedia tool initialized successfully.
+2026-09-12 17:19:18,528 | INFO | LangGraphAgent | Tavily search tool initialized successfully.
+2026-09-12 17:19:18,548 | INFO | root | Tools registered: ['arxiv', 'wikipedia', 'tavily_search']
+2026-09-12 17:19:20,304 | INFO | LangGraphAgent | Groq LLM initialized successfully.
+2026-09-12 17:19:20,340 | INFO | LangGraphAgent | Tools successfully bound to LLM.
+2026-09-12 17:19:20,409 | INFO | LangGraphAgent | LangGraph compiled successfully.
+2026-09-12 17:19:20,436 | WARNING | LangGraphAgent | ASCII graph visualization is not available.
+2026-09-12 17:19:36,813 | INFO | LangGraphAgent | User query received: hello can you tell me capital of india
+2026-09-12 17:19:41,483 | INFO | LangGraphAgent | Starting LangGraph execution...
+2026-09-12 17:19:41,493 | INFO | LangGraphAgent | LLM node started.
+2026-09-12 17:19:41,495 | ERROR | LangGraphAgent | Error occurred while invoking LLM.
+Traceback (most recent call last):
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_4620\3998909435.py", line 6, in tool_calling_llm
+    messages = state["messages"]
+               ~~~~~^^^^^^^^^^^^
+KeyError: 'messages'
+2026-09-12 17:19:41,497 | ERROR | LangGraphAgent | LangGraph execution failed.
+Traceback (most recent call last):
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_4620\3311378415.py", line 5, in <module>
+    response = graph.invoke(
+               ^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3913, in invoke
+    for chunk in self.stream(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2967, in stream
+    for _ in runner.tick(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 207, in tick
+    run_with_retry(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 617, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 707, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 447, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_4620\3998909435.py", line 6, in tool_calling_llm
+    messages = state["messages"]
+               ~~~~~^^^^^^^^^^^^
+KeyError: 'messages'
+During task with name 'tool_calling_llm' and id '51e457ed-86cc-8fca-175b-75c068467d88'
+2026-09-12 17:21:39,894 | INFO | LangGraphAgent | LangGraph compiled successfully.
+2026-09-12 17:21:42,584 | WARNING | LangGraphAgent | ASCII graph visualization is not available.
+2026-09-12 17:21:59,727 | INFO | LangGraphAgent | User query received: hello can  i know the capital of india
+2026-09-12 17:26:32,929 | INFO | LangGraphAgent | Environment variables loaded successfully.
+2026-09-12 17:26:33,386 | INFO | LangGraphAgent | arxiv tool initialized successfully.
+2026-09-12 17:26:33,875 | INFO | LangGraphAgent | arXiv tool initialized successfully.
+2026-09-12 17:26:34,383 | INFO | LangGraphAgent | Tavily search tool initialized successfully.
+2026-09-12 17:26:36,704 | INFO | LangGraphAgent | Tools registered: ['arxiv', 'wikipedia', 'tavily_search']
+2026-09-12 17:26:42,620 | INFO | LangGraphAgent | Groq LLM initialized successfully.
+2026-09-12 17:26:43,984 | INFO | LangGraphAgent | Tools successfully bound to LLM.
+2026-09-12 17:26:48,040 | INFO | LangGraphAgent | LangGraph compiled successfully.
+2026-09-12 17:26:49,741 | WARNING | LangGraphAgent | ASCII graph visualization is not available.
+2026-09-12 17:27:09,703 | INFO | LangGraphAgent | User query received: hello can i know what is capital of india
+2026-09-12 17:27:16,826 | INFO | LangGraphAgent | Starting LangGraph execution...
+2026-09-12 17:27:16,832 | INFO | LangGraphAgent | LLM node started.
+2026-09-12 17:27:16,833 | INFO | LangGraphAgent | Sending 1 message(s) to LLM.
+2026-09-12 17:27:17,236 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-09-12 17:27:17,240 | ERROR | LangGraphAgent | Error occurred while invoking LLM.
+Traceback (most recent call last):
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_4620\3272361723.py", line 14, in tool_calling_llm
+    response = llm_with_tools.invoke(messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 6014, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 488, in invoke
+    self.generate_prompt(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1877, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1684, in generate
+    self._generate_with_cache(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2022, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\groq\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\groq\_base_client.py", line 1044, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.NotFoundError: Error code: 404 - {'error': {'message': 'The model `qwen/qwq-32b` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-09-12 17:27:17,251 | ERROR | LangGraphAgent | LangGraph execution failed.
+Traceback (most recent call last):
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_4620\3311378415.py", line 5, in <module>
+    response = graph.invoke(
+               ^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3913, in invoke
+    for chunk in self.stream(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2967, in stream
+    for _ in runner.tick(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 207, in tick
+    run_with_retry(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 617, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 707, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 447, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_4620\3272361723.py", line 14, in tool_calling_llm
+    response = llm_with_tools.invoke(messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 6014, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 488, in invoke
+    self.generate_prompt(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1877, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1684, in generate
+    self._generate_with_cache(
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2022, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 627, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\groq\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Learning\langgraph\.venv\Lib\site-packages\groq\_base_client.py", line 1044, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.NotFoundError: Error code: 404 - {'error': {'message': 'The model `qwen/qwq-32b` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+During task with name 'tool_calling_llm' and id '3bf2185d-6d10-db90-6e0f-afaff1b87f0f'
+2026-09-12 17:29:00,445 | INFO | LangGraphAgent | Groq LLM initialized successfully.
+2026-09-12 17:29:03,077 | INFO | LangGraphAgent | Tools successfully bound to LLM.
+2026-09-12 17:29:04,759 | INFO | LangGraphAgent | LangGraph compiled successfully.
+2026-09-12 17:29:05,067 | WARNING | LangGraphAgent | ASCII graph visualization is not available.
+2026-09-12 17:29:05,542 | ERROR | LangGraphAgent | Invalid user input.
+Traceback (most recent call last):
+  File "C:\Users\raman\AppData\Local\Temp\ipykernel_4620\3123687808.py", line 9, in <module>
+    raise ValueError(
+ValueError: Question cannot be empty.
+2026-09-12 17:29:22,981 | INFO | LangGraphAgent | User query received: hello can i know capital of india
+2026-09-12 17:29:27,978 | INFO | LangGraphAgent | Starting LangGraph execution...
+2026-09-12 17:29:27,981 | INFO | LangGraphAgent | LLM node started.
+2026-09-12 17:29:27,982 | INFO | LangGraphAgent | Sending 1 message(s) to LLM.
+2026-09-12 17:29:28,831 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-12 17:29:28,858 | INFO | LangGraphAgent | LLM returned a direct response without tool calls.
+2026-09-12 17:29:28,860 | INFO | LangGraphAgent | LangGraph execution completed successfully.
+2026-09-12 17:29:44,847 | INFO | LangGraphAgent | Final answer displayed successfully.
+2026-09-12 17:29:49,229 | INFO | LangGraphAgent | Program execution completed.
+2026-09-12 17:32:20,667 | INFO | LangGraphAgent | LangGraph visualization displayed successfully.
